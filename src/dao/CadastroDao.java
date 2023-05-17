@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import static Util.ConnectionFactory.getConexao;
 
 public class CadastroDao {
-    public static ArrayList<Cadastro> realizacadastro() throws SQLException {
+    public static ArrayList<Cadastro> realizacadastros() throws SQLException {
         ArrayList<Cadastro>cadastroAux = new ArrayList<>();
         String sql1 = "select log_nome, log_senha from login";
         Connection conn = getConexao();
